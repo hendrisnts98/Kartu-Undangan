@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Birthday Party Nabila</title>
+  <link href='https://fonts.googleapis.com/css?family=Economica:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="./style.css">
+<script src="https://kit.fontawesome.com/64503a7986.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="card">
+  <div class="column left">
+    <header class="heading">
+      <div class="super-heading" style="text-transform: none; font-family: 'Style Script', cursive;font-weight: normal; letter-spacing: 3px;font-size: 40px;">Birthday Party</div>
+      <h1 class="title" style="font-size: 5em;">Nabila's birthday</h1>
+    </header>
+    
+    <address class="party-address">
+      <p><i class="icon-map-marker"></i>Jl. Pinang Baris gg.warga pancasila no 8A</p>
+      <p><i class="fa-regular fa-calendar"></i>12 June 2023</p>
+      <p><i class="fa-regular fa-clock"></i>15.00 - selesai</p>
+    </address>
+    
+    <time class="party-date">
+      <div class="party-day">17<sup>th</sup></div>
+    </time>
+  </div><!-- column left -->
+  
+  <section class="column right">
+    <form id="theForm">
+        <h2>Are you coming?</h2>
+        <input type="radio" name="coming" value="yes" id="comingYes" class="radio-coming--yes" checked />
+        <label for="comingYes" class="label-coming--yes">Yes, ofcourse!</label>
+        <input type="radio" name="coming" value="no" id="comingNo" class="radio-coming--no" />
+        <label for="comingNo" class="label-coming--no">No, I'm sorry...</label>
+      
+      <fieldset class="bringing">
+        <h3>Do you bring other people?</h3>
+        <input type="radio" name="bringing" id="bringingYes" value="yes" class="radio-bringing--yes" checked />
+        <label for="bringingYes" class="label-bringing--yes">Yes!</label>
+        <div class="is_bringing" id="bringing">
+          <h4>Oh, cool! Who else is coming??</h4>
+          <p class="subtitle">Bring as many as you like</p>
+          <input type="text" name="persons" id="persons" placeholder="tara, cahya, putri" />
+        </div>
+        <input type="radio" name="bringing" value="no" id="bringingNo" class="radio-bringing--no" />
+        <label for="bringingNo" class="label-bringing--no">No, I'm the lone ranger</label>
+      </fieldset>
+      
+      <button class="send-card-button" id="theButton">Alrighty!</button>
+      <div id="thankyou" class="thank-you"></div>
+    </form>
+  </section><!-- column right -->
+</div><!-- card -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
